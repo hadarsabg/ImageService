@@ -8,13 +8,7 @@ using System.ServiceProcess;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using ImageService.Server;
-using ImageService.Controller;
-using ImageService.Modal;
-using ImageService.Logging;
-using ImageService.Logging.Modal;
-using System.Configuration;
-using ImageService.Infrastructure;
+
 
 namespace ImageService
 {
@@ -44,10 +38,6 @@ namespace ImageService
     public partial class ImageService : ServiceBase
     {
 
-        private ImageServer m_imageServer;          // The Image Server
-		private IImageServiceModal modal;
-		private IImageController controller;
-		private ILoggingService logging;
 
 		// Here You will Use the App Config!
         protected override void OnStart(string[] args)
